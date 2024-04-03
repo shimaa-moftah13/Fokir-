@@ -1,0 +1,217 @@
+@media only screen and (max-width: 900px) {
+    .navpar{
+        width: 100%;
+    }
+    .nav-links ul{
+        position: absolute;
+        background-color:#333333;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s opacity .3s visibility;
+    }
+    .nav-links ul li{
+        float: none;
+        padding: 15px;
+
+    }
+    .nav-icon{
+        width: 30px;
+        height: 20px;
+        /* background-color: antiquewhite; */
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        
+    }
+    .nav-icon span{
+        display: inline-block;
+        width: 100%;
+        height: 3px;
+        background-color:#FF305B ;
+        position: absolute;
+        transition: .3s all;
+    }
+    .nav-icon span:nth-child(1){
+        top: 0;
+    }
+    .nav-icon span:nth-child(1){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nav-icon span:nth-child(3){
+        bottom: 0;
+    }
+    .nav-icon:hover + ul{
+        opacity: 1;
+        visibility:visible ;
+    }
+    .nav-icon:hover span:nth-child(1){
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        
+    }
+    .nav-icon:hover span:nth-child(2){
+        opacity: 0;
+    }
+    .nav-icon:hover span:nth-child(3){
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    .content h1{
+        font-size: 50px;
+    }
+
+}
+@media only screen and (max-width: 650px){
+    .content h1{
+        font-size: 35px;
+    }
+    .content h3{
+        font-size: 20px;
+    }
+    .content h4{
+        font-size: 22px;
+    }
+}
+
+/* home */
+/* about */
+
+@media only screen and (max-width: 950px){
+    .about .about-cap , .about-photo{
+        width: 49%;
+        margin: 0;
+    }
+    .about-photo{
+        margin-right: 2px;
+    }
+    .border{
+        border: none;
+
+    }
+    .img{
+        top: 0;
+        left: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .about .about-cap , .about-photo{
+        width: 100%;
+        margin: 0 0 40 0;
+    }
+    .text h3{
+        font-size: 26px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+    .about-profile ul li{
+        font-size: 14px;
+    }
+    .btn button{
+        padding:10px 19px ;
+    }
+
+}
+
+/* about */
+/* services */
+
+@media only screen and (max-width: 992px) {
+    .items{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .items{
+        width: 100%;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+    .items h3{
+        font-size: 20px;
+    }
+    .items p{
+        font-size: 14px;
+    }
+}
+
+/* services */
+/* portfolio */
+
+@media only screen and (max-width: 1200px) {
+    .head ul{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .head ul li{
+        width: 20%;
+    }
+    .head ul li a{
+        padding: 4px;
+        font-size: 14px;
+    }
+    .gallery-items{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .head ul{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .head ul li{
+        width: 20%;
+    }
+    .head ul li a{
+        padding: 4px;
+        font-size: 14px;
+    }
+    .gallery-items{
+        width: 100%;
+    }
+}
+
+/* portfolio */
+/* Testimonial */
+
+@media only screen and (max-width: 768px){
+    /* .testimonial .card{
+        width: 100%;
+    } */
+    .testimonial.card .card-photo ,.testimonial .card .card-caption{
+        width: 100;
+       
+    }
+   
+
+}
+
+
+
+@media only screen and (max-width: 1030px){
+    .blog-items{
+        padding: 10px;
+    }
+    .item h3 a{
+        font-size: 18px;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .blog-items{
+       width: 100%;
+    }
+    .item button a{
+       font-size: 14px;
+    }
+
+}
